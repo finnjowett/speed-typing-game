@@ -1,0 +1,54 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1e0555;
+    .timer {
+        font-size: 4rem;
+        color: white;
+        font-weight: bold;
+        position: absolute;
+        top:20%;
+    }
+    .quote-input {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: transparent;
+        border: 4px solid #A1922E;
+        outline: none;
+        width: 100%;
+        height: 6rem;
+        margin: auto;
+        resize: none;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        &:focus {
+            border-color: black;
+        }
+    }
+    .container {
+        background-color: #F0DB4F;
+        padding: 2rem;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40vw;
+        div{
+            margin-bottom: 2rem;
+        }
+    }
+}
+.correct{
+    color: green;
+}
+.incorrect {
+    color: red;
+    text-decoration: underline;
+}
